@@ -10,3 +10,4 @@ insert dev
 Git has a mutable index called stage.
 git track changes.
 No.
+feature2Conflict
