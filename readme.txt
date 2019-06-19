@@ -8,4 +8,6 @@ insert
 insert dev
 Git has a mutable index called stage.
 git track changes.
+conflict
+Creating a new branch is quick AND simple.
 
