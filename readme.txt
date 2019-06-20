@@ -12,4 +12,5 @@ git track changes.
 No.
 feature2 conflict fixed.
 manage
+try git stash.
 
