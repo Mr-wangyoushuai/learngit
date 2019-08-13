@@ -1,0 +1,40 @@
+git add 文件/文件夹
+git commit -m''               提交到当前分支上
+git diff HEAD -- 文件       比较工作区和版本库里的区别
+git branch                       查看本地分支
+git branch -a                   查看分支列表 红色为远程分支
+git branch <name>        创建分支
+git checkout --文件         工作区文件回退
+git checkout <name>      切换分支
+git checkout -b <name> 创建并切换分支
+git reset --hard HEAD^                               回退到上一个版本
+git reset --hard commitID                           回退到固定ID版本
+git reflog                                                     查看你的每一次命令
+git log (--pretty=oneline)                            查看commit记录
+cat 文件				查看文件
+git reset HEAD 文件			暂存区修改回退到工作区 再丢弃工作取得修改
+git checkout --文件                                   丢弃工作区的修改
+rm 文件				移除工作区文件
+git rm 文件			移除工作区和暂存区文件  完了使用 git commit提交一下
+
+git merge  <name>  		合并分支到当前分支
+//  输入i     编辑信息内容     按ESC      输入:wq     回车
+vim <file> 编辑文件
+
+git branch -d <name>		删除分支
+git remote add origin 地址  		远程关联
+git push origin -u master		第一次推送到远程 加 -u
+
+git stash 				将工作区/暂存区文件保存起来 // 可用于解决冲突，bug修复
+git stash list			查看stash列表
+git stash apply [stash@{0}-------版本]     恢复 不删除stash 
+git stash drop 			删除stash 
+git stash pop			作用相当于 git stash apply + git stash drop    可将工作区与pull下来的合并
+
+git merge --no-ff  -m'message' name	有分支历史记录
+
+git remote 			查看远程
+git remote -v 			
+git branch --set-upstream branch-name origin/branch-name   建立本地分支与远程分支的联系
+git pull 				下拉 更新代码，可解决冲突
+
